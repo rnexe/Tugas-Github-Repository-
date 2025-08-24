@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tugas Table</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  .container {
+    border: 1px solid #000;
+    width: 400px;
+    padding: 50px;
+  }
+  header{
+    border: 1px solid #000;
+    padding: 20px;
+    margin-bottom: 50px;
+  }
+
+  footer {
+    border: 1px solid #000;
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+
+  .main {
+    display: flex;
+    margin-bottom: 50px;
+  }
+  .sidebar {
+    border: 1px solid #000;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+  }
+  .content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+    flex: 1;
+  }
+  .box {
+    border: 1px solid #000;
+    text-align: center;
+    padding: 10px;
+  }
+  .red {
+    background: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
+    grid-column: span 2;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <header>header</header>
+    <div class="main">
+      <div class="sidebar">kiri</div>
+      <div class="content">
+        <!-- Baris 1 -->
+        <div class="box">*</div>
+        <div class="box red">***</div>
+        <div class="box">*</div>
+        
+        <!-- Baris 2 -->
+        <div class="box red">***</div>
+        <div class="box">*</div>
+        <div class="box">*</div>
+        
+        <!-- Baris 3 -->
+        <div class="box">*</div>
+        <div class="box red">***</div>
+        <div class="box">*</div>
+        
+        <!-- Baris 4 -->
+        <div class="box red">***</div>
+        <div class="box">*</div>
+        <div class="box">*</div>
+      </div>
+    </div>
+    <footer>footer</footer>
+  </div>
+</body>
+</html>
